@@ -75,6 +75,7 @@
   
   a {
     background-color: transparent;
+    text-decoration: none;
   }
   
   /**
@@ -346,4 +347,16 @@
   
   [hidden] {
     display: none;
+  }
+
+
+  li {
+    list-style: none;
+  }
+  ul{
+      margin:0;
+      padding:0;
+  }
+  h1{
+      margin:0;
   }
