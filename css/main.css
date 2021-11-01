@@ -57,9 +57,7 @@ body {
   width: 100vw;
   height: 100vh;
   max-height: 100vh;
-}
-header {
-  background-color: transparent;
+  
 }
 .header__logo{
   font-size: var(--font-size-subtitle);
@@ -80,13 +78,18 @@ body {
   font-weight: var(--weight-s);
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  margin: 2em 0;
+  padding-top:4em;
 }
 .main__header {
   display: flex;
   justify-content: space-between;
   padding: 1.5rem 2rem 1.5rem 2rem;
   align-items: center;
+  position: fixed;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 96%;
 }
 .main__arrow-down {
   text-align: center;
@@ -114,7 +117,7 @@ body {
   justify-content: flex-end;
 }
 .nav__item{
-    color: var(--white);
+   color: var(--very-dark-desaturated-blue);
 }
 /* Estilos compartidos con contact y nav */
 .nav__item,
@@ -152,7 +155,7 @@ body {
 .about__row.reverse {
   direction: rtl;
 }
-.row__info {
+.row__info{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -186,7 +189,7 @@ body {
   text-align: left;
   font-family: var(--Family-1);
   color: var(--grayish-blue);
-  font-size: var(--font-size);
+  font-size: var(--font-size-small);
   font-weight: var(--weight-s);
   line-height: 1.5em;
   margin: 2em 0;
@@ -223,6 +226,7 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   height: 100%;
+  min-height: 50vh;
 }
 
 .row__image-service{
@@ -237,10 +241,85 @@ body {
 .row__image-service:nth-child(2) {
   background-image: url("../images/desktop/image-photography.jpg");
 }
+.row__info-title{
+  font-family: var(--Family-2);
+  font-size:var(--font-size-subtitle-small);
 
+}
+
+.row__info-service{
+  text-align: center;
+  width: 60%;
+  font-family: var(--Family-1);
+  font-size: var(--font-size-small);
+}
+/* Cambiando color de dos parrafos y titulos con la misma clase */
+.row__image-service:nth-child(1) .row__info-service,
+.row__image-service:nth-child(1) .row__info-title{ 
+  color: var(--dark-moderate-cyan);
+}
+.row__image-service:nth-child(2) .row__info-service,
+.row__image-service:nth-child(2) .row__info-title{
+  color:var(--dark-blue);
+}
+
+.row__image-service{
+  display:flex;
+  flex-direction: column;
+  justify-content:flex-end;
+  align-items:center;
+  padding: 3em;
+}
 
 /* Proyects */
-
+.proyects{
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+.proyects__title{
+  font-size: var(--font-size-subtitle);
+  font-family: var(--Family-2);
+  padding: 3em 0;
+}
+.testimonial__item-description{
+  text-align: center;
+  font-family: var(--Family-1);
+  color: var(--very-dark-grayish-blue);
+  font-size: var(--font-size-small);
+  line-height: 1.8em;
+}
+.proyects__testimonials{
+  display:flex;
+  width: 80%;
+  height: 100%;
+}
+.testimonial__item-image{
+  display: flex;
+  justify-content: center;
+}
+.testimonial__item-image img{
+  border-radius: 50%;
+  width: 4em;
+}
+.testimonial__item-footer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em 0;
+}
+.testimonial__item-footer-name{
+  font-size: var(--font-size);
+  font-family: var(--Family-2);
+}
+.tetimonial__item-footer-skill{
+  color: var(--very-dark-grayish-blue);
+  font-size: var(--font-size-small);
+  font-family: var(--Family-1);
+}
 /* Contact section */
 
 .contact {
@@ -250,6 +329,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  height: 100vh;
 }
 .contact__title {
   font-family: var(--Family-1);
@@ -297,12 +377,8 @@ body {
   .about {
     height: 400vw;
   }
-  
-  .services {
-    height: 180vw;
-  }
   .services__row {
-
+    height: 120vh;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
   }
@@ -314,7 +390,7 @@ body {
   .header__nav {
     display: none;
   }
-  .about {
+  .about,.services{
     height: auto;
   }
   .row__info {
@@ -330,5 +406,11 @@ body {
     font-size: var(--font-size-title-small);
     margin-left: 0.5em;
     margin-right: 0.5em;
+  }
+  .row__image-service{
+    padding: 1em;
+    padding-bottom: 0.3em;
+    padding-left: 0.1em;
+    padding-right: 0.1em
   }
 }
