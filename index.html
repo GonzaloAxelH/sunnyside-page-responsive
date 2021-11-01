@@ -14,19 +14,20 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
+    <header class="main__header">
+      <div class="header__logo"> <a href="">sunnyside</a></div>
+      <nav class="header__nav">
+        <ul class="nav__list">
+          <a href="#about" class="nav__item">About</a>
+          <a href="#services" class="nav__item">Services</a>
+          <a href="#proyects" class="nav__item">Proyects</a>
+          <a href="#contact" class="nav__item active">Contact</a>
+        </ul>
+      </nav>
+      <div class="header__menu-icon">icon</div>
+    </header>
     <main class="main">
-      <header class="main__header">
-        <div class="header__logo"> <a href="">sunnyside</a></div>
-        <nav class="header__nav">
-          <ul class="nav__list">
-            <a href="#about" class="nav__item">About</a>
-            <a href="#sevices" class="nav__item">Services</a>
-            <a href="#proyects" class="nav__item">Proyects</a>
-            <a href="#contact" class="nav__item active">Contact</a>
-          </ul>
-        </nav>
-        <div class="header__menu-icon">icon</div>
-      </header>
+      
       <section class="main__content">
         <h1 class="main__title">We are creatives</h1>
         <div class="main__arrow-down">
@@ -65,12 +66,63 @@
     </section>
     <section class="services" id="services">
       <div class="services__row">
-        <div class="row__image-service"></div>
-        <div class="row__image-service"></div>
+        <div class="row__image-service">
+          <h1 class="row__info-title">Graphic Design</h1>
+           <p class="row__info-service">consectetur illo Lorem ipsum dolor sit adipisicing elit. Aperiam,
+            illo Lorem ipsum dolor sit amet consectetur adipisicing elit
+             </p>
+        </div>
+        <div class="row__image-service">
+            
+          <h1 class="row__info-title">Photography</h1>
+          <p class="row__info-service">consectetur illo Lorem ipsum dolor sit adipisicing elit. Aperiam,
+           illo Lorem ipsum dolor sit amet consectetur adipisicing elit
+           </p>
+        </div>
       </div>
     </section>
-    <section class="proyects" id="proyects"></section>
-    <section class="contact" id="Contact">
+    <section class="proyects" id="proyects">
+        <h1 class="proyects__title">Client testimonials</h1>
+        <div class="proyects__testimonials">
+          <div class="testimonial__item">
+             <div class="testimonial__item-image">
+                <img src="./images/image-jennie.jpg" alt="">
+             </div> 
+             <p class="testimonial__item-description">consectetur illo Lorem ipsum dolor sit adipisicing elit. Aperiam,
+              illo Lorem ipsum dolor sit amet consectetur adipisicing elit
+            </p>
+            <div class="testimonial__item-footer">
+               <h3 class="testimonial__item-footer-name">Emily R.</h3>
+                <p class="tetimonial__item-footer-skill">Marketing Director</p>
+              </div>   
+          </div>
+          <div class="testimonial__item">
+            <div class="testimonial__item-image">
+               <img src="./images/image-jennie.jpg" alt="">
+            </div> 
+            <p class="testimonial__item-description">consectetur illo Lorem ipsum dolor sit adipisicing elit. Aperiam,
+             illo Lorem ipsum dolor sit amet consectetur adipisicing elit
+           </p>
+           <div class="testimonial__item-footer">
+              <h3 class="testimonial__item-footer-name">Emily R.</h3>
+               <p class="tetimonial__item-footer-skill">Marketing Director</p>
+             </div>   
+         </div>
+          <div class="testimonial__item">
+            <div class="testimonial__item-image">
+               <img src="./images/image-thomas.jpg" alt="">
+            </div> 
+            <p class="testimonial__item-description">consectetur illo Lorem ipsum dolor sit adipisicing elit. Aperiam,
+             illo Lorem ipsum dolor sit amet consectetur adipisicing elit
+           </p>
+           <div class="testimonial__item-footer">
+              <h3 class="testimonial__item-footer-name">Emily R.</h3>
+               <p class="tetimonial__item-footer-skill">Marketing Director</p>
+             </div>   
+         </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
       <h1 class="contact__title">sunnyside</h1>
       <ul class="contact__nav-list">
         <a href="#">About</a>
